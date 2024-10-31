@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./pogoda.css" />
+    <script src="./skript_pogoda.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="body">
+    <div class="ilond">
+      <h1 class="zagolovok">Консультант по погоде</h1>
+      <div class="panel">
+        <span class="span">Температура</span>
+        <input class="stroka" type="text" />
+        <span class="span">°C</span>
+        <span class="span vet">Влажность</span>
+        <div class="spisok">
+          <span class="vnytri"></span>
+          <div class="poyv">
+            <button class="niz" id="one">низкая</button>
+            <button class="niz" id="two">средняя</button>
+            <button class="niz" id="three">высокая</button>
+          </div>
+          <img class="strelka" src="knopka.svg" alt="" />
+        </div>
+        <!-- <span class="span vet">Осадки</span> -->
+        <!-- <label for="checkbox" class="checkbox-label span">Осадки</label> -->
+        <input type="checkbox" id="checkbox" class="checkbox" />
+        <label for="checkbox" class="checkbox-label span">Осадки</label>
+      </div>
+      <div class="osnova">
+        <div class="text">
+          <p class="ode">
+            <span class="od">Одежда: </span>Легкая, дышащая, короткие брюки и
+            футболка.
+          </p>
+          <p class="ode">
+            <span class="od">Обувь: </span>Легкая — сандалии или открытые туфли
+          </p>
+          <p class="ode">
+            <span class="od">Аксессуары: </span> Солнцезащитные очки, головной
+            убор.
+          </p>
+        </div>
+        <img src="image 1.jpg" alt="" />
+      </div>
+    </div>
+  </body>
+</html>

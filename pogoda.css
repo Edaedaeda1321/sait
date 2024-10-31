@@ -1,0 +1,153 @@
+* {
+  font-family: "Inter";
+  color: #125300;
+}
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  height: 100vh;
+  flex-direction: column;
+  background-color: #b3b9af;
+}
+.ilond {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffffff;
+  width: 750px;
+  height: 686px;
+  border-radius: 8px;
+}
+.zagolovok {
+  font-size: 32px;
+  font-weight: 600;
+  margin-top: 37px;
+}
+.panel {
+  margin-top: 70px;
+  width: 622px;
+  height: 33px;
+  display: flex;
+  align-items: center;
+}
+.span {
+  font-weight: 600;
+  font-size: 16px;
+}
+.stroka {
+  border: 1px solid rgba(100, 169, 54, 0.6);
+  outline: 0;
+  width: 60px;
+  height: 33px;
+  border-radius: 7px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  margin-left: 14px;
+  margin-right: 11px;
+  box-sizing: border-box;
+}
+.vet {
+  margin-left: 60px;
+}
+.spisok {
+  border: 1px solid rgba(100, 169, 54, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 112px;
+  height: 33px;
+  border-radius: 7px;
+  margin-left: 8px;
+  position: relative;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.spisok_active {
+  border-radius: 7px 7px 0 0;
+}
+.strelka {
+  position: absolute;
+  top: 15px;
+  right: 13px;
+}
+.checkbox {
+  position: absolute;
+  appearance: none;
+}
+.checkbox-label {
+  cursor: pointer;
+  position: relative;
+  margin-left: 60px;
+  user-select: none;
+}
+.checkbox-label:after {
+  position: absolute;
+  content: "";
+  left: 67px;
+  top: 2px;
+  width: 15px;
+  height: 15px;
+  border: 1px solid rgba(100, 169, 54, 0.6);
+}
+.checkbox:checked + .checkbox-label:after {
+  background-image: url("galka.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.poyv {
+  position: absolute;
+  top: 32px;
+  left: -1px;
+  width: 112px;
+  height: 78px;
+  border: 1px solid rgba(100, 169, 54, 0.6);
+  border-radius: 0px 0px 7px 7px;
+  box-sizing: border-box;
+  display: none;
+  user-select: none;
+}
+.poyv_active {
+  display: block;
+}
+.niz {
+  width: 100%;
+  height: 26px;
+  border: 0;
+  background-color: inherit;
+  font-weight: 600;
+}
+.niz:hover {
+  background-color: rgba(100, 169, 54, 0.2);
+  cursor: pointer;
+}
+.osnova {
+  height: 291px;
+  width: 420px;
+  margin-top: 119px;
+  display: flex;
+}
+.ode {
+  font-size: 11px;
+  line-height: 150%;
+  font-weight: 600;
+}
+.od {
+  font-weight: 800;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.vnytri {
+  user-select: none;
+}
+.strelka {
+  user-select: none;
+}
+.strelka_active {
+  transform: rotate(0.5turn);
+}
